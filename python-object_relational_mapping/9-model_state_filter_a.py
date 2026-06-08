@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""lists all State objects that contain
-the letter 'a' from the database hbtn_0e_6_usa"""
+"""Lists all State objects that contain the letter a"""
 import sys
 from model_state import Base, State
 from sqlalchemy import create_engine
@@ -14,7 +13,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     states = session.query(State).filter(
-        State.name.like('a')).order_by(State.id).all()
+        State.name.like('%a%')).order_by(State.id).all()
     for state in states:
         print(f"{state.id}: {state.name}")
     session.close()
