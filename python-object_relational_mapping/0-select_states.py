@@ -1,4 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+"""
+This module lists all states from the database hbtn_0e_0_usa.
+The results are sorted in ascending order by states.id.
+"""
 import MySQLdb
 import sys
 
