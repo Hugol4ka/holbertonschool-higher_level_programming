@@ -14,7 +14,7 @@ def get_data():
     # On récupère la liste des clés du dictionnaire users
     usernames = list(users.keys())
     # renvoyer cette liste convertie en JSON avec jsonify
-    return jsonify(users.keys())
+    return jsonify(list(users.keys()))
 
 @app.route("/status")
 def get_status():
