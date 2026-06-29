@@ -5,4 +5,3 @@ function add (a, b) {
 }
 
 exports.add = add;
-
