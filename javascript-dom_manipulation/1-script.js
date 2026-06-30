@@ -1,5 +1,6 @@
+const bouton = document.querySelector("#red_header");
+const leHeader = document.querySelector("header");
 
-const updateRedHeader = document.querySelector("#red_header");
-updateRedHeader.onclick = function () {
-  updateRedHeader.style.color = "#FF0000";
+bouton.onclick = function () {
+  leHeader.style.color = "#FF0000";
 };
